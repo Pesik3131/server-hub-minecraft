@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServerHub Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co/SxBNq0N/serverhub.png" type="image/png"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header-container">
+        <div class="top-image-container">
+            <img src="https://i.ibb.co/SxBNq0N/serverhub.png" alt="ServerHub Logo">
+        </div>
+        <h1>ServerHub Minecraft</h1>
+    </div>
+    <div class="button-container">
+        <a href="index.html" class="nav-button active">Главная</a>
+        <a href="rules.html" class="nav-button">Правила</a>
+    </div>
+    <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+      <i class="fas fa-sun"></i>
+    </div>
+
+    <div class="section">
+        <div class="text-block">
+            <p>Добро пожаловать на ServerHub Minecraft – постоянно развивающийся центр лучших серверов Minecraft! Мы предлагаем широкий выбор игровых миров для игроков всех уровней. Здесь вы найдете увлекательные приключения, захватывающие битвы и дружелюбное сообщество. Наслаждайтесь игрой!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Что делает ServerHub особенным?</h2>
+        <div class="server-container">
+            <div class="server-box">
+                <h3>Захватывающие приключения</h3>
+                <div class="text-block">
+                    <p>Исследуйте уникальные биомы и захватывающие миры, полные опасностей и неожиданных поворотов! Здесь вы найдете приключения, которые не оставят вас равнодушными.</p>
+                </div>
+            </div>
+            <div class="server-box">
+                <h3>Непревзойденное выживание</h3>
+                <div class="text-block">
+                    <p>Проверьте свои навыки выживания в сложном и динамичном мире. Богатые ресурсы, новые вызовы и захватывающие сражения ждут вас!</p>
+                </div>
+            </div>
+            <div class="server-box">
+                <h3>Увлекательный RPG-мир</h3>
+                <div class="text-block">
+                    <p>Погрузитесь в захватывающий сюжет, выполняйте увлекательные квесты и создайте своего неповторимого героя. Масштабные сражения и эпические битвы ждут вас!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Что вас ждет на ServerHub Minecraft?</h2>
+        <ul>
+            <li>Постоянное развитие и обновление серверов</li>
+            <li>Захватывающие Game Nights (игровые ночи) с конкурсами и призами</li>
+            <li>Регулярные розыгрыши ценных призов и внутриигровых предметов</li>
+            <li>Захватывающие PvP-схватки и масштабные битвы</li>
+            <li>Турниры с призовым фондом и славой победителей</li>
+            <li>Дружелюбное и активное сообщество игроков</li>
+        </ul>
+        <div class="text-block">
+          <p>Присоединяйтесь к нам и станьте частью ServerHub Minecraft! Мы постоянно работаем над улучшением наших серверов и созданием незабываемого игрового опыта.</p>
+        </div>
+    </div>
+
+    <div class="section social-media">
+        <h2>Социальные сети</h2>
+        <p>Оставайтесь на связи!</p>
+        <a href="https://discord.gg/Rsv2jFGh39" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-discord"></i> Присоединяйтесь к нашему Discord-серверу!
+        </a>
+        <a href="https://youtube.com/@serverhubminecraft?si=pG1hFXRvhbhFExH-" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i> Подписывайтесь на наш YouTube канал!
+        </a>
+        <p>Discord разработчика: thehawk00</p>
+    </div>
+
+    <footer>
+        <p>Copyright 2024 ServerHub Minecraft - Все права защищены. </p>
+    </footer>
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        let icon = document.querySelector('.dark-mode-toggle i');
+        icon.classList = icon.classList.contains('fa-sun') ? 'fas fa-moon' : 'fas fa-sun';
+      }
+    </script>
+</body>
+</html>

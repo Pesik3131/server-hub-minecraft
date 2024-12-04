@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила ServerHub Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co/SxBNq0N/serverhub.png" type="image/png"
+</head>
+<body>
+    <div class="header-container-rules">
+        <div class="top-image-container">
+            <img src="https://i.ibb.co/SxBNq0N/serverhub.png" alt="ServerHub Logo">
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="index.html" class="nav-button">Главная</a>
+        <a href="rules.html" class="nav-button active">Правила</a>
+    </div>
+
+    <div class="rules-content">
+        <h1>Правила ServerHub Minecraft</h1>
+
+        <div class="category" onclick="toggleDescription(this)">
+            <h3>1: Соблюдение Discord ToS и Community Guidelines</h3>
+            <span class="arrow">➡️</span>
+            <div class="description">
+                <p>Все участники этого сервера обязаны соблюдать Условия предоставления услуг Discord (Discord ToS) и Правила сообщества Discord (Discord Community Guidelines). Это правило создано для обеспечения безопасности и комфортного общения всех участников сервера. Игнорирование этих правил может привести к санкциям.</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleDescription(this)">
+            <h3>2: Запрет NSFW и 18+ контента</h3>
+            <span class="arrow">➡️</span>
+            <div class="description">
+                <p>Публикация материалов для взрослых (NSFW, 18+) неприемлема на сервере, так как мы стремимся создать безопасное пространство для всех участников.</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleDescription(this)">
+            <h3>3: Запрет неподобающего поведения</h3>
+            <span class="arrow">➡️</span>
+            <div class="description">
+                <p>Запрещено вести себя неподобающим образом, использовать оскорбительные выражения, угрожать другим участникам, заниматься спамом или флудом. Неподобающее поведение и спам могут существенно испортить атмосферу общения. Будьте внимательны и уважайте других участников!</p>
+            </div>
+        </div>
+
+        <div class="category" onclick="toggleDescription(this)">
+            <h3>4: Запрет политических дискуссий</h3>
+            <span class="arrow">➡️</span>
+            <div class="description">
+                <p>На сервере запрещено обсуждение любых актуальных политических тем. Политические дискуссии могут вызывать разногласия и конфликты, поэтому мы настоятельно просим избегать таких тем. Уважайте мнения других.</p>
+            </div>
+        </div>
+
+        <script>
+        function toggleDescription(category) {
+            const description = category.querySelector('.description');
+            const arrow = category.querySelector('.arrow');
+
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+            category.classList.toggle('open');
+        }
+        </script>
+    </div>
+</body>
+</html>
+
+
